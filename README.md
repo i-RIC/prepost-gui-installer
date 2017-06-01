@@ -1,20 +1,35 @@
-リポジトリの作成手順
+# How to build iRIC installer
+iRIC installer can be created using Qt Installer Framework.
 
-repogen -p packages repo
+## Install Qt installer Framework
+Qt Installer Framework can be installed using Qt Maintainance tool.
+Qt installer framework is located at Qt/Tools/Qt Installer Framework 2.0 in the tree of components.
+When you find it, please check it, and press next buttons, to install it.
 
-Offline インストーラの作成手順
+## How to update files in installer
+1. Files to be included in installer are in packages/(packagename)/data folder. Overwrite the files you want to update.
+2. Update version. Version number is in the following files. Update both to the same version.
+    - packages/(packagename)/data/definition.xml
+    - packages/(packagename)/meta/package.xml
 
-binarycreator --offline-only -c config/config.xml -p packages installer_offline
+## Build offline installer
+You can build installer with the following command:
 
+`binarycreator --offline-only -c config/config.xml -p packages installer_offline`
 
-Online インストーラの作成手順
+This will create installer_offline.exe.
 
-binarycreator --online-only -c config/config.xml -p packages installer_online
+## Build repository files
 
+You can build archive files that you should upload to repository. By uploading these files, user can obtain updated files through iRIC Maintainance Tool.
 
-参考
+`repogen -p packages repo`
 
-リポジトリの一部のフォルダだけをアップするには、以下を実行。
+This will create repo folder, that includes 7z files.
 
-repogen -p packages --update --include (更新するパッケージ) repo
+Currently, the repository to distribute updates are at the following URL. It was created onlyl for testing so maybe this will be changed in the near future.
+https://i-ric.org/svn/iric/qt_dev
 
+## Reference Documentation
+Documentation of Qt Installer Framework can be hound in the following URL:
+http://doc.qt.io/qtinstallerframework/
