@@ -5,6 +5,6 @@
 	<Version>2.2.4</Version>
 	<Default>true</Default>
 	<ReleaseDate>2015-04-30</ReleaseDate>
-	<SortingPriority>60</SortingPriority>
+	<SortingPriority>50</SortingPriority>
 	<Script>installscript.qs</Script>
 </Package>
