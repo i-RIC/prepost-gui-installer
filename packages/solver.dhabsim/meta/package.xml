@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Package>
+	<DisplayName>DHABSIM</DisplayName>
+	<Description>"DHABSIM" is an easy-to-use two-dimensional habitat calculator. It can calculate habitat condition of mid to small scale river without using HSI for specific fish species.</Description>
+	<Version>1.0.0</Version>
+	<Default>true</Default>
+	<ReleaseDate>2015-05-31</ReleaseDate>
+	<SortingPriority>70</SortingPriority>
+	<Script>installscript.qs</Script>
+</Package>

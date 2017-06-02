@@ -1,0 +1,1 @@
+﻿"DHABSIM" is an easy-to-use two-dimensional habitat calculator. It can calculate habitat condition of mid to small scale river without using HSI for specific fish species. It imports geometry, velocity,and depth exported by other flow calcuration solvers, and outputs a habitat distribution map.DHABSIM is based on the research supported by JSPS (24560666).
