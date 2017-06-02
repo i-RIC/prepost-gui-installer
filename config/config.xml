@@ -9,10 +9,10 @@
 	<TargetDir>@HomeDir@/iRIC</TargetDir>
 	<RemoteRepositories>
 		<Repository>
-			<Url>https://i-ric.org/svn/iric/qt_dev</Url>
+			<Url>https://i-ric.org/svn/iric/prod</Url>
 			<Username>installer</Username>
 			<Password>iR1Cv3Installer</Password>
-			<DisplayName>iRIC Repository for developers</DisplayName>
+			<DisplayName>iRIC Repository for production</DisplayName>
 		</Repository>
 	</RemoteRepositories>
 </Installer>
